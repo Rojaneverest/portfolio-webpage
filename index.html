@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <section class="container">
+        <h2>About Me</h2>
+        <ul>
+            <li>Name: Rojan Raj Thapa</li>
+            <li>Profession: Bootcamp Student</li>
+            <li>Location: Sukedhara, Kathmandu</li>
+        </ul>
+        
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>C#</li>
+            <li>.NET</li>
+            <li>Python</li>
+        </ul>
+        
+        <h2>Interests</h2>
+        <ul>
+            <li>History</li>
+            <li>Music</li>
+        </ul>
+
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Playing football</li>
+            <li>Listening to music</li>
+        </ul>
+        
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: rojaneverest@gmail.com</li>
+            <li>Phone: 9866543643</li>
+        </ul>
+    </section>
+
+    <section class="form">
+        <h2>Fill up this form for extra benefits</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+    
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+    
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label><br><br>
+    
+            <label for="country">Country:</label><br>
+            <select id="country" name="country">
+                <option value="Nepal">Nepal</option>
+                <option value="USA">USA</option>
+                <option value="canada">Canada</option>
+            </select><br><br>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>Author: Rojan Raj Thapa</p>
+        <p><a href="mailto:rojaneverest@gmail.com">rojaneverest@gmail.com</a></p>
+    </footer>
+</body>
+</html>
