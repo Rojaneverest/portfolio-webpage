@@ -16,4 +16,6 @@ HTML5: For structure and content.
 CSS3: For styling and animations.
 JavaScript: For interactivity and dynamic elements.
 
-A line has been changed. NEw things 
+A line has been changed. things changed here too
+
+A new line has been added
