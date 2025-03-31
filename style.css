@@ -2,8 +2,8 @@
 
 :root {
   --primary: #546e7a;
-  --secondary: #e48da8;
-  --accent: #e48da8;
+  --secondary: green;
+  --accent: green;
   --background: #F8F9FA;
   --card-bg: #fefefe;
   --text: #4a545c;
