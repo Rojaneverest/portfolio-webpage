@@ -2,8 +2,8 @@
 
 :root {
   --primary: #546e7a;
-  --secondary: #e48da8;
-  --accent: #e48da8;
+  --secondary: green;
+  --accent: green;
   --background: #F8F9FA;
   --card-bg: #fefefe;
   --text: #4a545c;
@@ -19,8 +19,8 @@
 
 .dark-mode {
   --primary: #dfe6e9;
-  --secondary: #fd79a8;
-  --accent: #fd79a8;
+  --secondary: green;
+  --accent: green;
   --background: #2d3436;
   --card-bg: #232a2d;
   --text: #dfe6e9;
