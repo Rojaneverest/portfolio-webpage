@@ -17,3 +17,5 @@ CSS3: For styling and animations.
 JavaScript: For interactivity and dynamic elements.
 
 A line has been changed. 
+
+A new line has been added
