@@ -1,86 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My Portfolio Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rojan Raj Thapa | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <button id="dark-mode-toggle" class="dark-mode-toggle">🌙 Dark Mode</button>
+    
+    <button id="scroll-to-top" class="scroll-to-top">↑</button>
+    
     <header>
-        <h1>My Portfolio</h1>
+        <h1>Rojan Raj Thapa</h1>
+        <p>Aspiring Developer | Bootcamp Student | Tech Enthusiast</p>
+        <div class="greeting-container">
+            <h2 id="greeting">Good Evening!</h2>
+            <p>Welcome to my portfolio website</p>
+            <div class="greeting-message">
+                "I'm excited you're here! Feel free to explore my projects and skills. 
+                If you have any questions or opportunities, I'd love to connect."
+            </div>
+        </div>
     </header>
 
-    <section class="container">
-        <h2>About Me</h2>
-        <ul>
-            <li>Name: Rojan Raj Thapa</li>
-            <li>Profession: Bootcamp Student</li>
-            <li>Location: Sukedhara, Kathmandu</li>
-        </ul>
-        
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>C#</li>
-            <li>.NET</li>
-            <li>Python</li>
-        </ul>
-        
-        <h2>Interests</h2>
-        <ul>
-            <li>History</li>
-            <li>Music</li>
-        </ul>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Rojan, a passionate learner currently enrolled in a coding bootcamp. I love building projects and exploring new technologies. I'm dedicated to creating meaningful and user-friendly applications that solve real-world problems.</p>
+            <ul>
+                <li><strong>Name:</strong> Rojan Raj Thapa</li>
+                <li><strong>Profession:</strong> Bootcamp Student</li>
+                <li><strong>Location:</strong> Sukedhara, Kathmandu</li>
+                <li><strong>Education:</strong> Currently pursuing Data Engineering</li>
+            </ul>
+        </section>
 
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Playing football</li>
-            <li>Listening to music</li>
-        </ul>
-        
-        <h2>Contact</h2>
-        <ul>
-            <li>Email: rojaneverest@gmail.com</li>
-            <li>Phone: 9866543643</li>
-        </ul>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+                <li>.NET</li>
+                <li>Python</li>
+                <li>Git</li>
+                <li>C++</li>
+            </ul>
+        </section>
 
-    <section class="form">
-        <h2>Fill up this form for extra benefits</h2>
-        <form action="/submit" method="POST">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-    
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-    
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br><br>
-    
-            <label>Gender:</label><br>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br><br>
-    
-            <input type="checkbox" id="terms" name="terms" required>
-            <label for="terms">I agree to the terms and conditions</label><br><br>
-    
-            <label for="country">Country:</label><br>
-            <select id="country" name="country">
-                <option value="Nepal">Nepal</option>
-                <option value="USA">USA</option>
-                <option value="canada">Canada</option>
-            </select><br><br>
-    
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message"></textarea><br><br>
-    
-            <input type="submit" value="Submit">
-        </form>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+            </div>
+            
+            <div class="project" data-category="web"> 
+                <h3>Personal Portfolio</h3>
+                <p>A responsive portfolio website built with HTML and CSS.</p>
+            </div>
+            
+            <div class="project" data-category="app csharp">
+                <h3>Task Manager</h3>
+                <p>A simple task management application built with C# and .NET.</p>
+            </div>
+            
+            <div class="project" data-category="python">
+                <h3>Budget Calculator</h3>
+                <p>A Python-based budget calculator with expense tracking.</p>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <div id="testimonials-list">
+                <div class="testimonial">
+                    <blockquote>Rojan is a dedicated learner who is always eager to tackle new challenges!</blockquote>
+                    <cite>— Amar Sir, Staff Engineer</cite>
+                </div>
+                <div class="testimonial">
+                    <blockquote>Working with Rojan was great. He has a keen eye for detail and is very proactive.</blockquote>
+                    <cite>— Raymant Sir, AI Guru</cite>
+                </div>
+                <div class="testimonial">
+                    <blockquote>Future Cybersecurity Expert</blockquote>
+                    <cite>— Aashik Sir</cite>
+                </div>
+            </div>
+            
+            <div class="testimonial-form-container">
+                <h3>Add a Testimonial</h3>
+                <form id="testimonial-form">
+                    <div>
+                        <label for="testimonial-name">Your Name:</label>
+                        <input type="text" id="testimonial-name" required>
+                    </div>
+                    <div>
+                        <label for="testimonial-text">Your Message:</label>
+                        <textarea id="testimonial-text" rows="3" required></textarea>
+                    </div>
+                    <button type="submit">Add Testimonial</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="interests">
+            <h2>Interests & Hobbies</h2>
+            <div class="two-column">
+                <div>
+                    <h3>Interests</h3>
+                    <ul>
+                        <li>Technology</li>
+                        <li>History</li>
+                        <li>Music</li>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Playing Football</li>
+                        <li>Listening to Music</li>
+                        <li>Reading</li>
+                        <li>Hiking</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:rojaneverest@gmail.com">rojaneverest@gmail.com</a></li>
+                <li><strong>Phone:</strong> 9866543643</li>
+                <li><strong>Location:</strong> Sukedhara, Kathmandu</li>
+            </ul>
+        </section>
+
+        <section id="form-section">
+            <h2>Stay Connected</h2>
+            <p>Fill out this form for updates and exclusive benefits!</p>
+            <form id="contact-form" action="/submit" method="POST">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div>
+                    <p>Gender:</p>
+                    <label>
+                        <input type="radio" name="gender" value="male"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Female
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        <input type="checkbox" name="terms" required> I agree to the terms and conditions
+                    </label>
+                </div>
+
+                <div>
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select a country</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="India">India</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>Author: Rojan Raj Thapa</p>
+        <p>&copy; 2025 Rojan Raj Thapa. All rights reserved.</p>
         <p><a href="mailto:rojaneverest@gmail.com">rojaneverest@gmail.com</a></p>
     </footer>
 </body>
